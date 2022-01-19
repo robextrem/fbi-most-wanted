@@ -7699,12 +7699,12 @@ html {
   scroll-behavior: smooth; }
 
 #main-section {
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover; }
 
 #tips {
-  background-image: url("/images/tips.jpg");
+  background-image: url("../images/tips.jpg");
   background-size: cover;
   background-position: bottom center; }
 
