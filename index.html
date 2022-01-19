@@ -1,0 +1,101 @@
+<html class="has-navbar-fixed-top">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="theme-color" content="#222222">
+        <title>FBI Most Wanted</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
+        <script defer src="dist/main.js?v=18.01.22"></script>
+        <link rel="stylesheet" href="css/app.css?v=18.01.22">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <nav class="navbar is-black is-fixed-top">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="/">
+                                <img src="/images/fbi-seal-logo-vector.png">
+                            </a>
+                            <a v-on:click.prevent="toggleBurger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="navbarBasicExample" class="navbar-menu" >
+                            <div class="navbar-start">
+                                <a href="#most-wanted" class="navbar-item">
+                                    Most Wanted Fugitives
+                                </a>
+                                <a href="#tips" class="navbar-item">
+                                    Submit a tip
+                                </a>
+                                <a href="#notice" class="navbar-item">
+                                    Notice
+                                </a>
+                            </div>
+                            <div class="navbar-end">
+                                <div class="navbar-item is-hidden-touch">
+                                    <div class="buttons">
+                                        <a href="https://www.fbi.gov/wanted/api" target="_blank" class="button is-rounded is-white is-small">
+                                            <span>FBI Wanted API</span>
+                                            <span class="icon"><i class="mdi mdi-open-in-new"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="https://www.fbi.gov/wanted/api" target="_blank" class="navbar-item is-hidden-desktop">
+                                    <span>FBI Wanted API</span>
+                                    <span class="icon"><i class="mdi mdi-open-in-new"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+               <section class="hero is-fullheight-with-navbar is-dark" id="main-section">
+                   <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title mb-5 warning-bottom">FBI Most Wanted</h1>
+                        <p class="subtitle mt-4">The FBI is seeking the public’s assistance in identifying individuals who made unlawful activities and committed various other alleged criminal violations</p>
+                        <buttons class="buttons mt-5">       
+                            <a href="#most-wanted" class="button is-link has-text-weight-semibold">View Fugitives</a>         
+                        </buttons>
+                    </div>
+                   </div>
+               </section>
+               <section class="section has-background-dark" id="most-wanted">
+                   <h3 class="is-size-3 has-text-centered has-text-weight-semibold has-text-white mb-6">Most Wanted Fugitives</h3>
+                   <div class="container">
+                        <fugitives-list size="10"></fugitives-list>
+                   </div>
+               </section>
+               <section class="hero is-fullheight is-black" id="tips">
+                   <div class="hero-body">
+                        <div class="container">
+                            <h3 class="is-size-3 has-text-centered has-text-weight-semibold has-text-white mb-6">Have you seen these criminals?</h3>
+                            <p class="has-text-centered has-text-white is-size-5">Please contact your local FBI office to submit a tip or report a crime. Use our online form to file electronically or call the appropriate toll-free number.</p>
+                            <div class="buttons is-centered mt-5 ">
+                                <a href="https://tips.fbi.gov/" target="_blank" class="button has-text-weight-semibold is-link">Submit a tip</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section has-background-light" id="notice">
+                    <div class="container">
+                        <div class="has-text-centered">
+                            <span class="icon is-medium"><i class="mdi mdi-36px has-text-danger mdi-alert-circle"></i></span>
+                        </div>
+                        <h2 class="has-text-centered has-text-weight-semibold is-size-4 mb-5">Important Notice</h2>
+                        <p class="has-text-centered is-size-5">The official FBI Most Wanted Fugitives list is maintained on the FBI website. This information may be copied and distributed, however, any unauthorized alteration of any portion of the FBI's Most Wanted Fugitives posters is a violation of federal law (18 U.S.C., Section 709). Persons who make or reproduce these alterations are subject to prosecution and, if convicted, shall be fined or imprisoned for not more than one year, or both.</p>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer py-3 is-relative has-background-black has-text-centered">
+                <span class="has-text-white is-size-7">This website is merely built with educational purpose</span>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+// Variables
+@import 'variables';
+// Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main-section{
+    background-image: url('/images/cover.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#tips{
+    background-image: url('/images/tips.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+    background-color: transparent;
+}
+.fugitive{
+    figure{
+        img {
+            object-fit: cover;
+            object-position: top;
+            height: 100%!important;
+        }
+    }
+}
+
+.is-numerated {
+    z-index: 10;
+    font-size: 18px;
+    left: -10px;
+    top: -10px;
+    font-weight: bold;
+    background-color: $warning;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: $white;
+    border-radius: 50%;
+    padding: 2px;
+    display: inline-block;
+}
+
+.warning-bottom{
+    position:relative;
+    padding-bottom: 10px;
+        &:before {
+        background: $warning;
+        height: 5px;
+        width: 100px;
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        }
+}
+
+@media(max-width: 767px) {
+    .fugitive.media{
+        display: block;
+        .media-left{
+            margin-bottom: 20px;
+        }
+    }
+}

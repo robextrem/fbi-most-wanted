@@ -1,0 +1,20 @@
+/* We'll need some initial vars to use here */
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap');
+
+
+/* Default font */
+$body-font-size: 0.9rem;
+$family-primary: "Be Vietnam Pro", "Helvetica Neue","Arial", "Helvetica", sans-serif;
+$family-secondary: "Helvetica Neue","Arial", "Helvetica", cursive, sans-serif;
+$danger:#B92C4D;
+$warning:#FDD33B;
+$link: #002675;
+$button-border-width: 2px;
+$modal-content-width: 680px;
+$navbar-height: 4.5rem;
+$navbar-item-img-max-height:4.5rem;
+
+$input-background-color:  rgba(250, 103, 130,0.5) !important;
+$input-color: $white;
+$input-border-color: $white;
